@@ -201,7 +201,8 @@ st.subheader("🔬 Experiment 3: Und wenn die mittlere Dauer falsch geschätzt w
 matrix = _fehlschaetzung(b, szenario)
 st.caption(
     "Jede Zeile ist eine feste Regel: die beste für eine mittlere Dauer m (bei der gewählten Form der Verteilung), dann eingesetzt bei einer anderen mittleren Dauer "
-    "(ein Viertel, das Einfache, das Vierfache von B). Zahlen: erwartete Kosten geteilt durch erwartetes Optimum."
+    "(ein Viertel, das Einfache, das Vierfache von B). Zahlen: erwartete Kosten geteilt durch erwartetes Optimum. "
+    "Gibt es mehrere gleich gute Regeln, zeigt die App „nie kaufen“; andere gleich gute Regeln können bei einer fremden mittleren Dauer deutlich weniger kosten."
 )
 st.plotly_chart(build_matrix(matrix), width="stretch", key="matrix_chart")
 kind, text = verdict_fehlschaetzung(matrix, b)

@@ -47,6 +47,6 @@ PRESET_HELP = {
     "Stapler (B = 20, mittlere Aufträge)": "Ein Stapler kostet 20 Tagesmieten; die Dauer ist gleichverteilt mit Mittel 20 Tage; gekauft wird am Break-even-Tag.",
     "Mini-Instanz von Hand (B = 4)": "Der Fall zum Nachrechnen: Kaufpreis 4, der Auftrag endet nach genau 4 Tagen; die Regel zahlt 7 statt 4.",
     "Kurze Aufträge": "Aufträge dauern im Mittel ein Viertel des Kaufpreises (geometrisch): Kaufen lohnt sich fast nie, Break-even ist fast optimal.",
-    "Lange Aufträge": "Die mittlere Dauer ist das Vierfache des Kaufpreises: hinter dem Kaufpunkt liegt fast die ganze Masse, die Garantie wird fast erreicht.",
+    "Lange Aufträge": "Die mittlere Dauer ist das Vierfache des Kaufpreises: 88 % der Aufträge dauern mindestens B Tage, Break-even liegt nahe an seiner Garantie.",
     "Sofort kaufen, Ausreißer": "Die Regel kauft am ersten Tag; die Aufträge sind meist kurz und selten sehr lang (Mittel B): sie zahlt den Kauf, den die meisten Aufträge nie gebraucht hätten.",
 }
