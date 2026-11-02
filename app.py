@@ -79,6 +79,19 @@ Weiter unten: die **Kernfrage** (was kostet die Regel im schlimmsten Fall), vier
 """
 )
 
+# erklaerseite:einfach:start (erzeugt von tools/set_demo_explainer.py (Website-Repo) aus tools/content/explainers/ski-rental-erklaert.json, nicht von Hand ändern)
+with st.expander("💬 In einfachen Worten"):
+    st.markdown(
+        """
+Ein Stapler kostet eine feste **Tagesmiete** oder einmalig den **Kaufpreis**. Wie lange der Auftrag dauert, weiß vorab niemand. Gemessen wird eine Regel am **Günstigsten mit Vorwissen**: Teilt man ihre Kosten durch dessen Kosten, ergibt sich das **Wettbewerbsverhältnis**. Der **schlechteste Wert über alle Dauern** ist die **Garantie** der Regel. Die Regel „mieten, bis die Miete den Kaufpreis erreicht, dann kaufen“ kostet im schlimmsten Fall höchstens das Doppelte; ein ausgeloster Kaufzeitpunkt senkt den schlechtesten erwarteten Wert und macht ihn bei jeder Dauer gleich.
+
+**Garantie ist nicht dasselbe wie der Betrieb.** Bei typischen Aufträgen liegt eine Regel oft weit unter ihrer Garantie, bei langen Aufträgen aber nahe daran. Ebenso zeigt die Demo, was eine falsch geschätzte mittlere Dauer kostet und wie sich mehrere Stufen (Miete, Leasing, Kauf) auswirken. Alle Ergebnisse stammen aus erfundenen Szenarien, nicht aus echten Aufträgen.
+
+[Ausführlich und verständlich erklärt, mit Fachteil](https://sebastianhanisch.net/ski-rental-erklaert.html)
+        """
+    )
+# erklaerseite:einfach:end
+
 with st.expander("So funktioniert Ski-Rental", expanded=True):
     st.markdown(
         """
@@ -256,6 +269,25 @@ with st.expander("⚠️ Annahmen, Grenzen und bekannte Probleme"):
 st.markdown("---")
 
 with st.expander("📐 Mathematische Formulierung"):
+    # erklaerseite:lesehilfe:start (erzeugt von tools/set_demo_explainer.py (Website-Repo) aus tools/content/explainers/ski-rental-erklaert.json, nicht von Hand ändern)
+    st.markdown(
+        r"""
+**Lesehilfe.** Gegeben sind der Kaufpreis $B$ und eine Regel; die Dauer $n$ ist vorab unbekannt. Gesucht ist, was die Regel im schlechtesten Fall und im Erwartungswert kostet.
+
+| Symbol | Bedeutung |
+|---|---|
+| $B$ | Kaufpreis in Tagesmieten (Miete: 1 je Tag) |
+| $n$ | Dauer der Nutzung in Tagen, $n \ge 1$ |
+| $t$ | Kauftag der Regel: bis Tag $t-1$ mieten, am Tag $t$ kaufen |
+| $\mathrm{OPT}(n)$ | Kosten mit Vorwissen über $n$ |
+| $\mathrm{ALG}_t(n)$ | Kosten der Regel „kaufe am Tag $t$“ |
+| $p_t$ | Wahrscheinlichkeit, am Tag $t$ zu kaufen (Zufallsregel) |
+| $c_i,\ r_i$ | Anschaffung und Tageskosten der Stufe $i$ |
+
+[Schritt für Schritt erklärt, mit Herleitung und Literatur](https://sebastianhanisch.net/ski-rental-erklaert.html#fachleute)
+        """
+    )
+    # erklaerseite:lesehilfe:end
     st.markdown(
         r"""
 **Lesehilfe.** Gegeben sind der Kaufpreis $B$ und eine Regel; die Dauer $n$ ist vorab unbekannt. Gesucht ist, was die Regel im schlechtesten Fall und im Erwartungswert kostet.
@@ -292,5 +324,5 @@ st.caption(
 st.caption(
     "Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – "
     "Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). "
-    "Mehr zu den Demos: [Interaktive Demos](https://sebastianhanisch.net/demos.html)."
+    "Mehr zur Reihe: [Online-Algorithmen: Entscheiden ohne Zukunft](https://sebastianhanisch.net/konzepte-online-algorithmen.html)."
 )

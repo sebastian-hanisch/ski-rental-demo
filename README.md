@@ -1,7 +1,6 @@
 # Ski-Rental – mieten oder kaufen, ohne die Dauer zu kennen – Streamlit-Demo
 
-<!-- TODO nach dem Deploy: direkt hierher den Live-Link setzen (Leerzeile davor und danach):
-**[→ Demo live ausprobieren](https://sebastianhanisch-ski-rental-demo.streamlit.app/)** -->
+**[→ Demo live ausprobieren](https://sebastianhanisch-ski-rental-demo.streamlit.app/)**
 
 Erstes Stück der Reihe **Online-Algorithmen** („Entscheiden ohne Kenntnis der Zukunft“) in der „Konzepte“-Reihe für die Website „Sebastian Hanisch – Operations Research und Machine Learning“.
 Anders als die Fall-Demos (ein Anwendungsfall, mehrere Verfahren im Vergleich) zeigt diese Demo **ein** Konzept, die **Wettbewerbsanalyse**, an einem wachsenden Beispiel: von einer Instanz zum Nachrechnen (Kaufpreis 4) über einen Stapler mit Kaufpreis 20 bis zu mehreren Stufen (Miete, Leasing, Kauf).
@@ -122,4 +121,4 @@ Gebaut mit Streamlit, Plotly, NumPy und pandas.
 
 ---
 
-Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). Mehr zu den Demos: [Interaktive Demos](https://sebastianhanisch.net/demos.html).
+Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). Mehr zur Reihe: [Online-Algorithmen: Entscheiden ohne Zukunft](https://sebastianhanisch.net/konzepte-online-algorithmen.html).
